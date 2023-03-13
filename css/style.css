@@ -1,0 +1,95 @@
+/*==============================================
+===     Parc Automobile Webforce 3        === 
+================================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 90%;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+/* ================== Header ================= */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(180, 39, 39, 0.747);
+  height: 60px;
+  font-size: 0.95em;
+}
+/* ================== Navigation ================ */
+nav {
+  background-color: rgb(182, 178, 178);
+  display: flex;
+  list-style-type: none;
+}
+li {
+  padding: 15px 25px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+/* the class .current is applied on the link toward the page the user is already on */
+li a:hover,
+.current a {
+  color: rgba(180, 39, 39, 0.747);
+}
+li a:hover {
+  transition: color 500ms ease-out;
+}
+
+/* ================== Main ================== */
+.carDisplay {
+  display: flex;
+  flex-wrap: wrap;
+}
+.carDisplay article {
+  height: 260px;
+  margin: 10px 0 0 10px;
+}
+.carDisplay article figure {
+  margin: 0;
+  height: 230px;
+  position: relative;
+}
+
+.carDisplay article figure img {
+  height: 100%;
+  border-radius: 10px;
+}
+.carDisplay article figure figcaption {
+  display: none;
+  position: absolute;
+}
+
+.carDisplay article figure:hover figcaption {
+	display: block;
+	font-size: 1.3em;
+
+  color: blue;
+	background-color: rgba(57, 156, 110, 0.7);
+	
+  left: 20%;
+  top: 50%;
+  transition: color 2s ease-out, background-color 2s ease-out;
+}
+.carDisplay article h4 {
+  margin-top: 5px;
+  text-align: center;
+}
+/* ================== RWD====================== */
+@media screen and (max-width: 900px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}

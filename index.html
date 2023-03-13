@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parc automobile Webforce 3-Acceuil</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- -------------- header -------------- -->
+    <header>
+      <h1>Parc automobile Webforce3</h1>
+    </header>
+    <!-- ------------- Navigation ----------- -->
+    <nav>
+      <li class="current"><a href="index.html">Véhicules</a></li> <!-- autre option que le script JS preventDefaut: mettre # en href-->
+      <!-- Link toward the current page-->
+      <li><a href="rechercher.html">Rechercher un véhicule</a></li>
+      <!-- Link to the recherche page -->
+    </nav>
+    <!-- correction ici li non nécessaire -->
+    <!-- ------------ Main---------------- -->
+    <main class="carDisplay">
+      <article>
+        <figure>
+          <img src="images/ferrari_488.jpg" alt="Ferrari 488" />
+          <figcaption>Ferrari 488</figcaption>
+        </figure>
+        <h4>Ferrari 488</h4>
+      </article>
+      <article>
+        <figure class="tooltip">
+          <img src="images/vw_golf4.jpg" alt="VW Golf 4z" />
+          <figcaption>VW Golf 4z</figcaption>
+        </figure>
+        <h4>VW Golf 4z</h4>
+      </article>
+      <article>
+        <figure>
+          <img src="images/peugeot_308.jpg" alt="Peugeot 308" />
+          <figcaption>Peugeot 308</figcaption>
+        </figure>
+        <h4>Peugeot 308</h4>
+      </article>
+      <article>
+        <figure>
+          <img src="images/peugeot_rcz.jpg" alt="Peugeot RCZ" />
+          <figcaption>Peugeot RCZ</figcaption>
+        </figure>
+        <h4>Peugeot RCZ</h4>
+      </article>
+      <article>
+        <figure>
+          <img src="images/porsche_concept.jpg" alt="Porsche concept" />
+          <figcaption>Porsche concept</figcaption>
+        </figure>
+        <h4>Porsche concept</h4>
+      </article>
+    </main>
+    <script>
+      // Stop the link pointing to the current from reloading the page
+      $(".current a").click(function (event) {
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

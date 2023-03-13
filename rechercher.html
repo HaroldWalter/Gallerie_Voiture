@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parc Automobile Webforce 3 - Rechercher</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/rechercher.js" defer></script>
+  </head>
+  <body>
+    <!-- -------------- header -------------- -->
+    <header>
+      <h1>Parc automobile Webforce3</h1>
+    </header>
+    <!-- ------------- Navigation ----------- -->
+    <nav>
+      <li><a href="index.html">Véhicules</a></li>
+      <!-- Link to the index page -->
+      <li class="current">
+        <a href="rechercher.html">Rechercher un véhicule</a>
+      </li>
+      <!-- Link to the current page-->
+    </nav>
+    <!-- ------------ Main---------------- -->
+    <main>
+      <!-- dropdown menu -->
+      <select id="selectBrand">
+        <option value="allBrands" >Toutes marques</option>
+        <option value="Peugeot">Peugeot</option>
+        <option value="Porsche">Porsche</option>
+        <option value="VW">VW</option>
+        <option value="Ferrari">Ferrari</option>
+      </select>
+      <!-- div where the cars are displayed -->
+      <div id="carList" class="carDisplay"></div>
+    </main>
+  </body>
+</html>
